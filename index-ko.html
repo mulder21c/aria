@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" xml:lang="ko-KR">
 <head>
-<title>Accessible Rich Internet Applications (WAI-ARIA) 1.2</title>
+<title>접근가능한 리치 인터넷 어플리케이션 (WAI-ARIA) 1.2</title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <script src="https://www.w3.org/Tools/respec/respec-w3c-common" class="remove"></script>
 <link href="common/css/common.css" rel="stylesheet" type="text/css"/>
@@ -158,11 +158,11 @@
 </head>
 <body>
 <section id="abstract">
-	<p>Accessibility of web content requires semantic information about widgets, structures, and behaviors, in order to allow assistive technologies to convey appropriate information to persons with disabilities. This specification provides an ontology of roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications. These semantics are designed to allow an author to properly convey user interface behaviors and structural information to assistive technologies in document-level markup. This version adds features new since WAI-ARIA 1.1 [[wai-aria-1.1]] to improve interoperability with assistive technologies to form a more consistent accessibility model for [[HTML]] and [[SVG2]]. This specification complements both [[HTML]] and [[SVG2]].</p>
-	<p>This document is part of the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> suite described in the <a href="http://www.w3.org/WAI/intro/aria.php"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Overview</a>.</p>
+	<p>웹 콘텐츠의 접근성은 보조기술이 장애인에게 적절한 정보를 전달 할 수 있도록 위젯, 구조, 동작에 대한 의미론적 정보를 필요로합니다. 이 명세는 접근 가능한 유저 인터페이스 요소(element)를 정의하고 웹 콘텐트와 어플리케이션의 접근성과 상호 운용성을 개선시키는데 사용될 수 있는 역할(role), 상태(state), 속성(property)의 온톨로지를 제공합니다. 이 의미론들은 작성자가 문서 수준의 마크업에서 유저 인터페이스 동작과 구조 정보를 보조 기술에 적절하게 전달 할 수 있도록 설계됩니다. 이 버전은 [[HTML]]과 [[SVG2]]에 대한 보다 일관된 접근성 모델을 형성시키기 위한 보조 기술과의 상호 운용성을 개선하기 위해 WAI-ARIA 1.1 [[wai-aria-1.1]] 이후 새로운 기능을 추가합니다.</p>
+	<p>이 문서는 <a href="http://www.w3.org/WAI/intro/aria.php"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 개요</a>에 기술 된 <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> 제품군의 일부입니다.</p>
 </section>
 <section id="sotd">
-	<p>The Accessible Rich Internet Applications Working Group seeks feedback on any aspect of the specification. When submitting feedback, please consider issues in the context of the companion documents. To comment, <a href="https://github.com/w3c/aria/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> ARIA GitHub repository</a>. If this is not feasible, send email to <a href="mailto:public-aria@w3.org?subject=Comment%20on%20WAI-ARIA%201.2">public-aria@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-aria/">comment archive</a>). In-progress updates to the document may be viewed in the <a href="http://w3c.github.io/aria/">publicly visible editors' draft</a>.</p>
+	<p>접근 가능한 리치 인터넷 어플리케이션 워킹 그룹은 명세의 모든 측면에 대한 피드백을 구합니다. 피드백을 제출 할 때, 동반 문서의 맥락에서 문제를 고려해주세요. 의견을 남기려면, <a href="https://github.com/w3c/aria/issues/new"><abbr title="World Wide Web Consortium">W3C</abbr> ARIA GitHub 저장소에 문제를 제출하세요</a>. 이것이 불가능할 경우 <a href="mailto:public-aria@w3.org?subject=Comment%20on%20WAI-ARIA%201.2">public-aria@w3.org</a>로 (<a href="http://lists.w3.org/Archives/Public/public-aria/">의견 아카이브</a>) 이메일을 보내세요. 문서에 대한 진행 중인 업데이트는 <a href="http://w3c.github.io/aria/">공개적으로 볼 수 있는 편집자 초안</a>에서 볼 수 있습니다.</p>
 </section>
 <section class="informative" id="introduction">
 	<h1>Introduction</h1>
